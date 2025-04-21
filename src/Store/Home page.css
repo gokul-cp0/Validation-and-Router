@@ -1,0 +1,100 @@
+            /*whole*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+            /* body*/
+.HomeBody{   
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../drag.jpg') no-repeat center/cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+            /*Navbar*/
+                        /*left*/
+.nav-link{
+    position: relative;
+}
+.nav-link:hover{
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+.nav-link::before{
+    content: "";
+    background-color: white;
+    position:absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    transition: all .5s;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+                            /*Center Search box*/
+
+.search-box::placeholder{
+    color: white;
+}
+.search-box{
+    padding: 5px;
+    width:20em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    color: white;
+    transition: 0.3s;
+}
+.search-box:hover,
+.search-box:focus{
+    border-bottom:3px solid white ;
+}
+                        /*right Titile*/
+
+.title-card:hover{
+    color: rgba(255,255,255,.8);
+}
+.title-card:hover path{
+    color: rgba(255,255,255,.8);
+}
+                        /*Body Content*/
+
+.content-box{
+    width:40em;
+    height: 50vh;
+    position: relative;
+    top: 60px;
+    left: 80px;
+}
+.github-button{
+    border: 1px solid rgba(255,255,255,.2);
+    background-color: transparent;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    letter-spacing: .7px;
+}
+.github-button svg{
+    font-size: 18px;
+}
+.github-button:hover{
+    background-color: white;
+    color: black;
+    
+}
+.github-button:hover svg{
+    fill: black;
+}
+.github-button:active{
+    background-color: rgb(169, 168, 168);
+}
+

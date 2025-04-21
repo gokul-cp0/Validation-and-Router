@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.SignupBody{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../drag.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.main{
+    background-color:transparent;
+    border: 2px solid rgba(255, 255, 255,.4);
+    width: 30em;
+    height: 80%;
+    border-radius: 1em;
+}
+h1
+{
+    margin: 0px;
+}
+.input-box input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    margin:15px 0 0 0;
+    padding: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255,.4);
+    outline: none;
+}
+.input-box input::placeholder{
+    color: white;
+}
+.signup button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: 2px solid rgba(255, 255, 255,.4);
+    color: white;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin:25px 0;
+    transition: .5s;
+}
+.signup button:hover{
+    color: black;
+    background-color: white;
+}
+a{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom:1px solid rgba(255, 255, 255,.4) ;
+    padding-bottom: 3px;
+    color: rgba(255, 255, 255,.4);
+}
+.Error{
+    font-size: 12px;
+}
+.green{
+    color: green;
+}
+.red{
+    color: rgba(250, 129, 129, 0.959);
+}
