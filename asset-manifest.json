@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Validation-and-Router/static/css/main.8fb1ea63.css",
+    "main.js": "/Validation-and-Router/static/js/main.fda445d3.js",
+    "static/js/453.ad6eb26e.chunk.js": "/Validation-and-Router/static/js/453.ad6eb26e.chunk.js",
+    "static/media/drag.jpg": "/Validation-and-Router/static/media/drag.fec9a966ab7137575426.jpg",
+    "index.html": "/Validation-and-Router/index.html",
+    "main.8fb1ea63.css.map": "/Validation-and-Router/static/css/main.8fb1ea63.css.map",
+    "main.fda445d3.js.map": "/Validation-and-Router/static/js/main.fda445d3.js.map",
+    "453.ad6eb26e.chunk.js.map": "/Validation-and-Router/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fb1ea63.css",
+    "static/js/main.fda445d3.js"
+  ]
+}
