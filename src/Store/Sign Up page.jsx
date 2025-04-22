@@ -1,6 +1,6 @@
 import React, {useState } from "react";
 import './Sign up.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 
 const SignUp=()=>
 {
@@ -97,7 +97,7 @@ const SignUp=()=>
             error.ConfPassword === "Passwords match"
         )
         {
-            navigate('/login',{state:user});
+            navigate('/Validation-and-Router/login',{state:user});
         }
         else
         {
@@ -127,10 +127,11 @@ const SignUp=()=>
                 <div className="w-100 text-center my-4 signup">
                     <button onClick={ClickFunc}>Sign Up</button>
                 </div>
-                <div className="w-100 text-center">
-                    <label>Have an Account? <a href="/login">Log in</a></label>
-                </div>
+                
             </form>
+            <div className="w-100 text-center">
+                    <label>Have an Account? <Link href="/login">Log in</Link></label>
+                </div>
         </div>
         </div>
     )

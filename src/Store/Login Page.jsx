@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Login.css';
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 const Login=()=>
 {
    const navigate=useNavigate();
@@ -28,7 +28,7 @@ const Login=()=>
         
         if(track.userName && track.password)
         {
-        navigate('/home',{state : LogUser}); 
+        navigate('/Validation-and-Router/home',{state : LogUser}); 
         }
         else{
             if(!track.userName && !track.password) {setWarn("Check username and Password")}
@@ -51,10 +51,11 @@ const Login=()=>
                         <button className="w-100" onClick={ClickButton}>Log in</button>
                         <span className="warnSpan">{warn}</span>
                     </div>
-                    <div className="w-100  text-center mt-4 text-white">
-                        <label className="newAccount">Don't have an Account ? <a href="/">Register now</a></label>
-                    </div>
+                    
                 </form>
+                <div className="w-100  text-center mt-4 text-white">
+                        <label className="newAccount">Don't have an Account ? <Link href="/">Register now</Link></label>
+                    </div>
             </div>
             </div>
     )
