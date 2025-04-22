@@ -9,8 +9,8 @@ const App=()=>
         <BrowserRouter basename="/Validation-and-Router">
             <Routes>
                 <Route path="/" element={<SignUp/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/home" element={<HomePage/>}/>
+                <Route path="login" element={<Login/>}/>
+                <Route path="home" element={<HomePage/>}/>
             </Routes>
         </BrowserRouter>
     )
