@@ -28,7 +28,7 @@ const Login=()=>
         
         if(track.userName && track.password)
         {
-        navigate('/Validation-and-Router/home',{state : LogUser}); 
+        navigate('/home',{state : LogUser}); 
         }
         else{
             if(!track.userName && !track.password) {setWarn("Check username and Password")}
@@ -54,7 +54,7 @@ const Login=()=>
                     
                 </form>
                 <div className="w-100  text-center mt-4 text-white">
-                        <label className="newAccount">Don't have an Account ? <Link href="/">Register now</Link></label>
+                        <label className="newAccount">Don't have an Account ? <Link to="/">Register now</Link></label>
                     </div>
             </div>
             </div>

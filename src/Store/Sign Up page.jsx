@@ -97,7 +97,7 @@ const SignUp=()=>
             error.ConfPassword === "Passwords match"
         )
         {
-            navigate('/Validation-and-Router/login',{state:user});
+            navigate('/login',{state:user});
         }
         else
         {
@@ -114,13 +114,13 @@ const SignUp=()=>
                     <input  name="name" type="text" placeholder="Name" required autoComplete="off"
                      onChange={StoreData} value={user.name}/><span className={Color.name} >{error.name}</span>
 
-                    <input  name="userName" type="text" placeholder="User Name" required 
+                    <input  name="userName" type="text" placeholder="User Name" required autoComplete="user-name"
                     onChange={StoreData} value={user.userName}/><span className={Color.userName}>{error.userName}</span>
 
-                    <input  name="password" type="password" placeholder="New Password" required
+                    <input  name="password" type="password" placeholder="New Password" required autoComplete="new-password"
                      onChange={StoreData} value={user.password}/><span className={Color.password}>{error.password}</span>
 
-                    <input  name="ConfPassword" type="password" placeholder="Confirm new Password"
+                    <input  name="ConfPassword" type="password" placeholder="Confirm new Password" autoComplete="confirm-password"
                      required onChange={StoreData}/><span className={Color.ConfPassword}>{error.ConfPassword}</span>
 
                 </div>
@@ -130,7 +130,7 @@ const SignUp=()=>
                 
             </form>
             <div className="w-100 text-center">
-                    <label>Have an Account? <Link href="/login">Log in</Link></label>
+                    <label>Have an Account? <Link to="/login">Log in</Link></label>
                 </div>
         </div>
         </div>
