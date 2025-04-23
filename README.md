@@ -1,4 +1,4 @@
-# Form validation and Routing (React)   - [Preview](https://gokul-cp0.github.io/Validation-and-Router/) 👆
+# Form validation and Routing (React)   - [Live Demo](https://gokul-cp0.github.io/Validation-and-Router/) 👆
 
 
   This is a basic React web app that shows how simple user login and signup can work using only the frontend. It includes three pages: Sign Up, Login, and Home.
